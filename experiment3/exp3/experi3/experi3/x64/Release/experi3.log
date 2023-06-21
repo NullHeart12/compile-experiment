@@ -1,0 +1,50 @@
+﻿  Reading Qt configuration (D:/Qt/qt-everywhere-src-6.4.3/qtbase/bin/qmake)
+  uic experi3.ui
+  rcc experi3.qrc
+  moc experi3.h
+   RCC: Warning: No resources in 'D:\vs2019\compile\experiment3\exp3\experi3\experi3\experi3.qrc'.
+  project.cpp
+  experi3.cpp
+  main.cpp
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x408 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 main.cpp)
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x40f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 main.cpp)
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x408 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 experi3.cpp)
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x411 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 main.cpp)
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x40f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 experi3.cpp)
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x413 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 main.cpp)
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x411 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 experi3.cpp)
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x414 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 main.cpp)
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x413 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 experi3.cpp)
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x415 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 main.cpp)
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x414 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 experi3.cpp)
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x417 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 main.cpp)
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x415 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 experi3.cpp)
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x418 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 main.cpp)
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x417 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 experi3.cpp)
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x41c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 main.cpp)
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x418 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 experi3.cpp)
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x41e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 main.cpp)
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x41c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 experi3.cpp)
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x420 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 main.cpp)
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x41e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 experi3.cpp)
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x422 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 main.cpp)
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x420 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 experi3.cpp)
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x423 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 main.cpp)
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x422 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 experi3.cpp)
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x423 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。 (编译源文件 experi3.cpp)
+  qrc_experi3.cpp
+  moc_experi3.cpp
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x408 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x40f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x411 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x413 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x414 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x415 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x417 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x418 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x41c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x41e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x420 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x422 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+D:\vs2019\compile\experiment3\exp3\experi3\experi3\project.h(1,1): warning C4828: 文件包含在偏移 0x423 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+LINK : fatal error LNK1181: 无法打开输入文件“D:\Qt\qt-everywhere-src-6.4.3\qtbase\lib\Qt6Widgets.lib”
