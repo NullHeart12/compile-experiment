@@ -1,5 +1,4 @@
-# compile-experiment
-hfut/合肥工业大学编译原理实验
+# compile-experiment/hfut/合肥工业大学编译原理实验
 
 实验一：词法分析器
 
