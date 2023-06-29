@@ -15,4 +15,4 @@
 <br>文本文件也为测试内容
 <br><img src="https://github.com/NullHeart12/hfut-compile-experiment/assets/125792130/283192c4-9a28-4fc2-89a0-077829eb54aa" alt="LR(1)语法分析设计" width="750" height="491.667">
 <br>更新了绘制DFA的代码
-<br><img src="https://github.com/NullHeart12/hfut-compile-experiment/assets/125792130/a41cc6cf-e924-4ce7-972d-0c46dedf0660" alt="DFA" width="523" height="4663">
+<br><img src="https://github.com/NullHeart12/hfut-compile-experiment/assets/125792130/a41cc6cf-e924-4ce7-972d-0c46dedf0660" alt="DFA" width="423" height="4663">
