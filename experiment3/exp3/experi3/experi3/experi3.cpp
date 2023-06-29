@@ -37,7 +37,7 @@ void experi3::get_grammer()
     QString original_text = ui.textEdit_2->toPlainText();
     if (original_text.isEmpty())
     {
-        QMessageBox::information(this, "error", "the grammer is empty");
+        QMessageBox::information(this, "fuck", "the grammer is empty");
         return;
     }
     else QMessageBox::information(this, "nice", "input successfully");
@@ -153,8 +153,29 @@ void experi3::show_FIRST()
     ui.listView->setModel(model);
 }
 
+QString experi3::get_the_name(QHash<QChar, QVector<project>> projects)
+{
+    QString name;
+	for (auto it = projects.begin(); it != projects.end(); it++)
+	{
+		for (auto it2 = it->begin(); it2 != it->end(); it2++)
+		{
+			name.append(QString(it2->head) + "->");
+			QString with_dot = it2->tail;
+			with_dot.insert(it2->dot_pos, '.');
+			name.append(with_dot + ';' + *it2->lookahead.begin() + '\n');
+		}
+		//name.append('\n');
+	}
+	return name;
+}
+
 void experi3::cre_state()
 {
+    Agdesc_t Agdirected = { 1,1,0,0,0,0,0,0 };
+    gvc = gvContext();
+    graph = agopen(const_cast<char*>("DFA"), Agdirected, NULL);
+
     cre_projects(zero);
     QStringList Items;
     int len = states.size();
@@ -177,9 +198,18 @@ void experi3::cre_state()
     for (auto it = DFA_table.begin(); it != DFA_table.end(); it++)
         qDebug() << it.key() << ';' << it.value();
     qDebug();
+    
+    gvLayout(gvc, graph, "dot");
+    agsafeset(graph, const_cast<char*>("dpi"), "600", "");
+    gvRenderFilename(gvc, graph, "png", "DFA.png");
+    gvFreeLayout(gvc, graph);
+    agclose(graph);
+    gvFreeContext(gvc);
+    
     if (!states.isEmpty())
         QMessageBox::information(this, "nice", "the collections have been made");
-    else QMessageBox::information(this, "error", "there is no collection");
+    else
+        QMessageBox::information(this, "error", "there is no collection");
 }
 
 QHash<QChar, QVector<project>> experi3::cre_projects(const QVector<project>& sub_curs)
@@ -230,16 +260,23 @@ QHash<QChar, QVector<project>> experi3::cre_projects(const QVector<project>& sub
         QHash<QChar, QVector<project>> next = cre_projects(copy);
         int next_num = states.indexOf(next);
         DFA_table[{cur_num, next_char}] = next_num;
+
+        Agnode_t* curNode = agnode(graph, const_cast<char*>(get_the_name(curs).toUtf8().constData()), 1);
+        Agnode_t* nextNode = agnode(graph, const_cast<char*>(get_the_name(next).toUtf8().constData()), 1);
+        Agedge_t* edge = agedge(graph, curNode, nextNode, NULL, 1);
+        agsafeset(edge, const_cast<char*>("label"), const_cast<char*>(QString(next_char).toUtf8().constData()), "");
     }
     return curs;
 }
 
 void experi3::cre_project(QHash<QChar, QVector<project>>& curs, const project& pre)
 {
-    if (pre.dot_pos == pre.tail.size() && !curs['r'].contains(pre)) curs['r'].emplace_back(pre);
+    if (pre.dot_pos == pre.tail.size() && !curs['r'].contains(pre))
+        curs['r'].emplace_back(pre);
     else if (pre.dot_pos < pre.tail.size() && !curs[pre.tail[pre.dot_pos]].contains(pre))
         curs[pre.tail[pre.dot_pos]].emplace_back(pre);
-    if (pre.dot_pos >= pre.tail.size()|| !pre.tail[pre.dot_pos].isUpper()) return;
+    if (pre.dot_pos >= pre.tail.size()|| !pre.tail[pre.dot_pos].isUpper()) 
+        return;
     QChar head = pre.tail[pre.dot_pos];
     for (auto it = grammer[head].begin(); it != grammer[head].end(); it++)
     {

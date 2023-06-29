@@ -7,6 +7,7 @@
 #include "project.h"
 #include "project.cpp"
 #include <QStandardItemModel>
+#include <graphviz/gvc.h>
 
 class experi3 : public QMainWindow
 {
@@ -31,6 +32,9 @@ public:
     QHash<QPair<int, QChar>, QString> ACTION;
     QHash<QPair<int, QChar>, int> GOTO;
 
+    GVC_t* gvc;//graphviz context
+    Agraph_t* graph;//graph
+
 public slots:
     void get_grammer();
     void get_input();
@@ -48,6 +52,6 @@ private:
     void cre_project(QHash<QChar, QVector<project>>& curs, const project& pre);
     void cre_ACTION_GOTO();
     bool analyse_single(int step, QVector<int>& states_stack, QString& sign_stack, QString& input_string);
-
+    QString get_the_name(QHash<QChar, QVector<project>> projects);
 };
 #endif
